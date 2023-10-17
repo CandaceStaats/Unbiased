@@ -11,4 +11,4 @@ services:
       - 3000:3000
   # change the $(pwd) with the result of the "pwd" command (inside the hackathon directory)
     volumes:
-      - $(pwd):/app
+      - /mnt/c/Users/dmonf/OneDrive/Desktop/hak/app/hackathon:/app
