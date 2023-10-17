@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
+import { v4 as uuid } from 'uuid';
 import { Appl, ApplStatus } from './appl.model';
-import { v4 as uuid} from 'uuid';
 import { CreateApplDto } from './dto/create-appl.dto';
 
 @Injectable()
