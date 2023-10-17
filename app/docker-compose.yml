@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  nest:
+    container_name: nest
+    build: .
+    image: nestapp:nest
+    tty: true
+    stdin_open: true
+    ports:
+      - 3000:3000
+  # change the $(pwd) with the result of the "pwd" command (inside the hackathon directory)
+    volumes:
+      - $(pwd):/app
