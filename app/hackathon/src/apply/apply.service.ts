@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { Appl, ApplStatus } from './appl.model';
 import { v4 as uuid} from 'uuid';
+import { CreateApplDto } from './dto/create-appl.dto';
 
 @Injectable()
 export class ApplyService {
@@ -10,7 +11,9 @@ export class ApplyService {
         return this.apply;
     }
 
-    createAppl(name: string, encryInfo: string, email:string ): Appl {
+    createAppl(createApplDto: CreateApplDto ): Appl {
+        const { name, email, encryInfo} = createApplDto;
+        
         const appl: Appl = {
             id: uuid(),
             name,
