@@ -12,7 +12,7 @@ After the applicant has uploaded their cv a statusmessage gets sent back to the 
 After all the processing and sending their unbiased cv to the hiring manager another statusmessage gets sent back to the frontend to let the applicant know that all went well.
 
 ## sendReply
-When the hiring manager clicks on one of the links in the email with the application a reply is sent from the backend to the applicant.
+When the hiring manager clicks on one of the links in the email with the application a reply is sent from the backend to the applicant. The emailaddress of the applicant and the emailaddress of the hiring manager have to be encrypted in that link so that the backend can send the email to the correct emailaddress and include the emailaddress of the hiring manager in the email so that the applicant can schedule an interview.
 
 # Future ideas
 Ideally the sendReply endpoint would later be replaced by sendEmail to send an email from the hiring manager to the applicant or vice versa for improved user experience, since we don't have the time now to build an emailclient into the backend that's something for later, but how it works has been documented.
