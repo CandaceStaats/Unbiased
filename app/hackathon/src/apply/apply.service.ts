@@ -11,9 +11,13 @@ export class ApplyService {
         return this.apply;
     }
 
+    getApplById(id: string): Appl {
+        return this.apply.find((appl) => appl.id === id)
+    }
+
     createAppl(createApplDto: CreateApplDto ): Appl {
         const { name, email, encryInfo} = createApplDto;
-        
+
         const appl: Appl = {
             id: uuid(),
             name,
