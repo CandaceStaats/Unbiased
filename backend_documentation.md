@@ -1,6 +1,7 @@
 # API
 The backend API has 3 endpoints, createLink to get the link for the apply page once the hiring manager posts a job listing, redact to process the cv/resume and send it to the hiring manager when someone applies to the job and sendReply to send a reply to the applicant when the hiring manager has decided with whom to get an interview. Ideally this would later be replaced by sendEmail to send an email from the hiring manager to the applicant or vice versa for improved user experience, but since we don't have the time now to build an emailclient into the backend that's something for later.
 Since at this point we don't have a database yet we have to store information in another way, our solution for that is to store information about the job posting in the link so that we know where to send something based on the link.
+<br><img src="https://github.com/Jeroenvh99/Unbiased_workingrepo/blob/general_backend/Flowchart%20(Applicant%20Perspective).png"/><br>
 
 ## createLink
 After the hiring manager fills in all the detail for the job listing on the website a request goes out to the backend to generate a link for the vacancy, this link consists of the hiring manager's emailaddress and the jobtitle. For security reasons the link gets sent to the provided email.
