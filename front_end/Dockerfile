@@ -1,9 +1,15 @@
-FROM node:18.18
+FROM node:18.18 as build-stage
 
 WORKDIR /app
 
-# COPY ./package*.json .
+COPY ./package*.json ./
 
-# RUN npm install
+RUN npm install
 
-CMD [ "bash" ]
+COPY . .
+
+RUN npm run build
+
+RUN npm install -g serve
+ENTRYPOINT []
+CMD ["serve", "-s", "build"]

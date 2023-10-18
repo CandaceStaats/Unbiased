@@ -43,3 +43,16 @@ k8s_resource(
     "backend",
     port_forwards=[port_forward(3000, 3000, link_path="api")],
 )
+
+docker_build(
+    "frontend",
+    "front_end",
+    dockerfile="front_end/Dockerfile",
+    only=all_git_files(PROJECT_ROOT),
+)
+k8s_yaml("kubernetes/frontend.yaml")
+
+k8s_resource(
+    "frontend",
+    port_forwards=[port_forward(4000, 3000, link_path="create")],
+)
