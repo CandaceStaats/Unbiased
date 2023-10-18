@@ -1,13 +1,15 @@
 FROM node
 
-RUN apt update && apt upgrade && npm install -g @nestjs/cli && npm install @nestjs/swagger
+RUN apt update && apt upgrade
 
-WORKDIR /app
+WORKDIR /app/hackathon
 
-COPY init.sh /tmp
+COPY ./hackathon/package*.json /app/
+
+RUN npm install
+
+COPY ./hackathon /app/
 
 EXPOSE 3000
-
-ENTRYPOINT [ "bash", "/tmp/init.sh"]
 
 CMD [ "npm", "start" ]
