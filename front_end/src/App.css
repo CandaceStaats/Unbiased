@@ -47,8 +47,9 @@
   background: #fff2e6;
 }
 .bgfooter {
-  background: #fff2e6;
-  height: 30px;
+	background: #fff2e6;
+	width: auto;
+	height: 1000px;
 }
 
 @keyframes App-logo-spin {
