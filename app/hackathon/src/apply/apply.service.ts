@@ -4,8 +4,8 @@ import { Appl, ApplStatus } from './appl.model';
 import { CreateApplDto } from './dto/create-appl.dto';
 import { GetApplyFilterDto } from './dto/get-apply-filter.dto';
 import { NotFoundException } from '@nestjs/common/exceptions';
-import { redact } from '..redact/redact';
-import { pdf_normalize } from './pdf_to_str';
+import { redact } from '../redact/redact';
+import { pdf_normalize } from '../pdf_to_str';
 
 
 @Injectable()
