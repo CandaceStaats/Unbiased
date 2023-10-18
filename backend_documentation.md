@@ -5,20 +5,11 @@ Since at this point we don't have a database yet we have to store information in
 <br><img src="https://github.com/Jeroenvh99/Unbiased_workingrepo/blob/general_backend/Flowchart%20backend.png"/><br>
 
 ## createLink
-After the hiring manager fills in all the detail for the job listing on the website a request goes out to the backend to generate a link for the vacancy, this link consists of the hiring manager's emailaddress and the jobtitle. For security reasons the link gets sent to the provided email.
-
-## upload pdf and parse information
-When the applicant uploads a cv it's being tokenised and the tokens are sent back to the frontend for the user to check and if necessary update their cv information. If the uploaded pdf isn't valid the user gets an errormessage that says what's wrong.
+After the hiring manager fills in all the details for the job listing on the website a request goes out to the backend to generate a link for the vacancy, this link consists of the hiring manager's email address and the jobtitle. For security reasons the link gets sent to the provided email.
 
 ## redact
-After the applicant has uploaded their cv a statusmessage gets sent back to the frontend to let the applicant know that their upload was successful and that their cv is being processed. If it wasn't successful we fall back onto the user manually filling it in.
-After all the processing and sending their unbiased cv to the hiring manager another statusmessage gets sent back to the frontend to let the applicant know that all went well.
+After the applicant has uploaded their cv a statusmessage gets sent back to the frontend to let the applicant know that their upload was successful and that their cv is being processed.
+After all the processing the unbiased cv is sent to the hiring manager with the applicant in bcc so that both parties don't know the other's email address.
 
 ## sendReply
 When the hiring manager clicks on one of the links in the email with the application a reply is sent from the backend to the applicant. The emailaddress of the applicant and the emailaddress of the hiring manager have to be encrypted in that link so that the backend can send the email to the correct emailaddress and include the emailaddress of the hiring manager in the email so that the applicant can schedule an interview.
-
-# Future ideas
-Ideally the sendReply endpoint would later be replaced by sendEmail to send an email from the hiring manager to the applicant or vice versa for improved user experience, since we don't have the time now to build an emailclient into the backend that's something for later, but how it works has been documented.
-
-## sendEmail
-When the hiring manager replies to the email with the application the backend receives it at this endpoint where the emailaddress of the applicant is decrypted from the subject and the email gets forwarded to that address. The email that the applicant receives has the emailaddress of the hiring manager encrypted in the subject, so that for communication the other way we can use the same endpoint.
