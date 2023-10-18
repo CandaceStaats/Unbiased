@@ -9,6 +9,7 @@ services:
     stdin_open: true
     ports:
       - 3000:3000
-    # change the $(pwd) with the result of the "pwd" command (inside the hackathon directory)
     volumes:
+      # According to https://stackoverflow.com/a/40905828/5026 you can use `.`
+      # for a path relative to the docker-compose.yml file.
       - .:/app
