@@ -30,10 +30,13 @@ function Apply() {
 	const [isEducationActive, setIsEducationActive] = useState(false)
 	const [isAchivementsActive, setIsAchivementsActive] = useState(false)
 
+	const domainAdd = "https://localhost:4000";
+	const pageNameApply = "apply";
+	
 	let {jobToken} = useParams()
 	useEffect(() => {
 		console.log(jobToken)
-		axios.get(`https://localhost:3333/apply/${jobToken}`)
+		axios.get(`${domainAdd}/${pageNameApply}/${jobToken}`)
 		.then(res => {
 			console.log(res)
 			setJobTitle(res.title) // adapt name to match backend
@@ -50,22 +53,32 @@ function Apply() {
 	{
 		console.log("please fill in all the fields")
 	}
-		let formUpload={
-			nickName: nickName,
-			profile: profile,
-			career: career,
-			work: work,
-			skills: skills,
-			certificates: certificates,
-			education: education,
-			achivements: achivements
-		}
-		axios.post(`https://localhost:3333/apply/form`, { formUpload })
+	let formData = {
+		jobToken: jobToken, // jobToken in the request body
+		cvUpload: {
+		  name: name,
+		  email: email,
+		  cv: cv,
+		},
+		formUpload: {
+		  nickName: nickName,
+		  profile: profile,
+		  career: career,
+		  work: work,
+		  skills: skills,
+		  certificates: certificates,
+		  education: education,
+		  achivements: achivements,
+		},
+	  };
+		axios.post(`${domainAdd}/${pageNameApply}/form`, formData)
 			.then(res => {
 				console.log(res)
 				console.log(res.data)
 			})
 			.catch(err => {
+				console.error(err);
+				setIsSuccess(false);
 			})
 	};
 
@@ -86,7 +99,7 @@ function Apply() {
 			email: email,
 			cv: cv
 		}
-		axios.post(`https://jsonplaceholder.typicode.com/users`, { cvUpload })
+		axios.post(`${domainAdd}/${pageNameApply}/form`, {jobToken}, { cvUpload })
 		  		.then(res => {
 		    		console.log(res)
 		   			console.log(res.data)
@@ -122,12 +135,24 @@ function Apply() {
 			  required
 			/>
 			<label>E-mail</label>
-		  </div>
-		  <input type="file" accept="application/pdf" onChange={(e) => setCv(e.target.files[0])} required />
+			</div>
+		  <div className="file-input-container">
+    <input
+        type="file"
+        id="file-input"
+        accept="application/pdf"
+        onChange={(e) => setCv(e.target.files[0])}
+        required
+        className="hidden-input"
+    	/>
+    	<label htmlFor="file-input" className="file-label">Choose File</label>
+		</div>
+
+		  <input type="file" accept="application/pdf" onChange={(e) => setCv(e.target.files[0])} required className="hidden-input" />
 		  <button className="submit-button" type="submit">Submit</button>
 		</form>
 	</div>
-		{isSuccess ? <h1></h1> :
+	{isSuccess ? <h1 aria-label="Success message"> </h1> :
 		<div className="inner-container"> 
 			<form onSubmit={e => {onFormSubmit(e)}}>
 				<div className={`ID3_applicant input-containe ${isNickNameActive ? 'active' : ''}`}>
