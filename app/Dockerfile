@@ -1,6 +1,6 @@
 FROM node
 
-RUN apt update && apt upgrade && npm install -g @nestjs/cli
+RUN apt update && apt upgrade && npm install -g @nestjs/cli && npm install @nestjs/swagger
 
 WORKDIR /app
 
