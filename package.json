@@ -1,0 +1,24 @@
+{
+  "name": "unbiased",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pdf_to_json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parisadeqi/Unbiased_workingrepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parisadeqi/Unbiased_workingrepo/issues"
+  },
+  "homepage": "https://github.com/parisadeqi/Unbiased_workingrepo#readme",
+  "dependencies": {
+    "libreoffice-convert": "^1.4.1",
+    "pdf-parse": "^1.1.1",
+    "pdfreader": "^3.0.2"
+  }
+}
