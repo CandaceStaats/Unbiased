@@ -1,0 +1,412 @@
+[
+	{
+		"m": "actor",
+		"f": "actress",
+		"n": "cast-member"
+	},
+	{
+		"m": "administrator",
+		"f": "administratrix",
+		"n": "administrator"
+	},
+	{
+		"m": "author",
+		"f": "authoress",
+		"n": "author"
+	},
+	{
+		"m": "bachelor",
+		"f": "maid",
+		"n": "*****"
+	},
+	{
+		"m": "bachelor",
+		"f": "spinster",
+		"n": "*****"
+	},
+	{
+		"m": "baron",
+		"f": "baroness",
+		"n": "noble"
+	},
+	{
+		"m": "boy",
+		"f": "girl",
+		"n": "kid"
+	},
+	{
+		"m": "boyfriend",
+		"f": "girlfriend",
+		"n": "partner"
+	},
+	{
+		"m": "brave",
+		"f": "squaw",
+		"n": "*****"
+	},
+	{
+		"m": "brother",
+		"f": "sister",
+		"n": "sibling"
+	},
+	{
+		"m": "cleaner",
+		"f": "maid",
+		"n": "cleaner"
+	},
+	{
+		"m": "count",
+		"f": "countess",
+		"n": "noble"
+	},
+	{
+		"m": "dad",
+		"f": "mum",
+		"n": "parent"
+	},
+	{
+		"m": "dad",
+		"f": "mom",
+		"n": "parent"
+	},
+	{
+		"m": "doctor",
+		"f": "lady-doctor",
+		"n": "doctor"
+	},
+	{
+		"m": "duke",
+		"f": "duchess",
+		"n": "noble"
+	},
+	{
+		"m": "earl",
+		"f": "countess",
+		"n": "noble"
+	},
+	{
+		"m": "editor",
+		"f": "editress",
+		"n": "editor"
+	},
+	{
+		"m": "emperor",
+		"f": "empress",
+		"n": "ruler"
+	},
+	{
+		"m": "father",
+		"f": "mother",
+		"n": "parent"
+	},
+	{
+		"m": "father-in-law",
+		"f": "mother-in-law",
+		"n": "parent-in-law"
+	},
+	{
+		"m": "fiance",
+		"f": "fiancee",
+		"n": "betrothed"
+	},
+	{
+		"m": "fireman",
+		"f": "firewomen",
+		"n": "fire fighter"
+	},
+	{
+		"m": "founder",
+		"f": "foundress",
+		"n": "founder"
+	},
+	{
+		"m": "forefather",
+		"f": "ancestor",
+		"n": "ancestor"
+	},
+	{
+		"m": "friar",
+		"f": "nun",
+		"n": "friar"
+	},
+	{
+		"m": "gentleman",
+		"f": "lady",
+		"n": "person"
+	},
+	{
+		"m": "gentlemen",
+		"f": "ladies",
+		"n": "people"
+	},
+	{
+		"m": "governor",
+		"f": "matron",
+		"n": "governor"
+	},
+	{
+		"m": "grandfather",
+		"f": "grandmother",
+		"n": "grandparent"
+	},
+	{
+		"m": "grandson",
+		"f": "granddaughter",
+		"n": "grandchild"
+	},
+	{
+		"m": "groom",
+		"f": "bride",
+		"n": "betrothed"
+	},
+	{
+		"m": "headmaster",
+		"f": "headmistress",
+		"n": "headmaster"
+	},
+	{
+		"m": "heir",
+		"f": "heiress",
+		"n": "heir"
+	},
+	{
+		"m": "hero",
+		"f": "heroine",
+		"n": "hero"
+	},
+	{
+		"m": "host",
+		"f": "hostess",
+		"n": "host"
+	},
+	{
+		"m": "housewife",
+		"f": "househusband",
+		"n": "homemaker"
+	},
+	{
+		"m": "hunter",
+		"f": "huntress",
+		"n": "hunter"
+	},
+	{
+		"m": "husband",
+		"f": "wife",
+		"n": "spouse"
+	},
+	{
+		"m": "inheritor",
+		"f": "inheritress",
+		"n": "inheritor"
+	},
+	{
+		"m": "inspector",
+		"f": "inspectress",
+		"n": "inspector"
+	},
+	{
+		"m": "instructor",
+		"f": "instructress",
+		"n": "instructor"
+	},
+	{
+		"m": "king",
+		"f": "queen",
+		"n": "ruler"
+	},
+	{
+		"m": "lad",
+		"f": "lass",
+		"n": "child"
+	},
+	{
+		"m": "landlord",
+		"f": "landlady",
+		"n": "land-owner"
+	},
+	{
+		"m": "male",
+		"f": "female",
+		"n": "*****"
+	},
+	{
+		"m": "man",
+		"f": "woman",
+		"n": "person"
+	},
+	{
+		"m": "manager",
+		"f": "manageress",
+		"n": "manager"
+	},
+	{
+		"m": "manservant",
+		"f": "maidservant",
+		"n": "servant"
+	},
+	{
+		"m": "mailman",
+		"f": "postman",
+		"n": "mail carrier"
+	},
+	{
+		"m": "mayor",
+		"f": "mayoress",
+		"n": "mayor"
+	},
+	{
+		"m": "millionaire",
+		"f": "millionairess",
+		"n": "millionaire"
+	},
+	{
+		"m": "murderer",
+		"f": "murderess",
+		"n": "murderer"
+	},
+	{
+		"m": "nephew",
+		"f": "niece",
+		"n": "cousin"
+	},
+	{
+		"m": "patron",
+		"f": "patroness",
+		"n": "patron"
+	},
+	{
+		"m": "peer",
+		"f": "peeress",
+		"n": "peer"
+	},
+	{
+		"m": "poet",
+		"f": "poetess",
+		"n": "poet"
+	},
+	{
+		"m": "policeman",
+		"f": "policewoman",
+		"n": "police officer"
+	},
+	{
+		"m": "porter",
+		"f": "portess",
+		"n": "porter"
+	},
+	{
+		"m": "postmaster",
+		"f": "postmistress",
+		"n": "postmaster"
+	},
+	{
+		"m": "priest",
+		"f": "priestess",
+		"n": "religious leader"
+	},
+	{
+		"m": "prince",
+		"f": "princess",
+		"n": "noble"
+	},
+	{
+		"m": "prophet",
+		"f": "prophetess",
+		"n": "prophet"
+	},
+	{
+		"m": "proprietor",
+		"f": "proprietress",
+		"n": "proprietor"
+	},
+	{
+		"m": "prosecutor",
+		"f": "prosecutrix",
+		"n": "prosecutor"
+	},
+	{
+		"m": "protector",
+		"f": "protectress",
+		"n": "protector"
+	},
+	{
+		"m": "salesman",
+		"f": "saleswoman",
+		"n": "sales person"
+	},
+	{
+		"m": "son",
+		"f": "daughter",
+		"n": "child"
+	},
+	{
+		"m": "son-in-law",
+		"f": "daughter-in-law",
+		"n": "child-in-law"
+	},
+	{
+		"m": "songster",
+		"f": "songstress",
+		"n": "singer"
+	},
+	{
+		"m": "spokesman",
+		"f": "spokeswoman",
+		"n": "spokesperson"
+	},
+	{
+		"m": "step-father",
+		"f": "step-mother",
+		"n": "step-parent"
+	},
+	{
+		"m": "stepfather",
+		"f": "stepmother",
+		"n": "stepparent"
+	},
+	{
+		"m": "steward",
+		"f": "stewardess",
+		"n": "steward"
+	},
+	{
+		"m": "sultan",
+		"f": "sultana",
+		"n": "ruler"
+	},
+	{
+		"m": "traitor",
+		"f": "traitress",
+		"n": "traitor"
+	},
+	{
+		"m": "tutor",
+		"f": "governess",
+		"n": "tutor"
+	},
+	{
+		"m": "uncle",
+		"f": "aunt",
+		"n": "relative"
+	},
+	{
+		"m": "waiter",
+		"f": "waitress",
+		"n": "server"
+	},
+	{
+		"m": "weatherman",
+		"f": "weatherman",
+		"n": "meteorologist"
+	},
+	{
+		"m": "widower",
+		"f": "widow",
+		"n": "*****"
+	},
+	{
+		"m": "swain",
+		"f": "nymph",
+		"n": "spirit"
+	}
+]
