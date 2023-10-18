@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  react:
+    container_name: react
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+    - /Users/emanuela/Desktop/unbiased_FE:/app

@@ -1,0 +1,199 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 10vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #D29398;
+}
+
+.App-link {
+  color: #9D141E;
+}
+
+/* .logo {
+	margin: 5px auto; //Sets top and bottom margin to 5px and left/right margin to auto
+	height: 70px;
+	width: 250px;
+	display: block; 
+  } 
+*/
+
+.logo {
+  margin: 5px 15px;
+  /* margin: 5px 250px; */
+  height: 70px;
+  width: 250px;
+}
+
+.bglogo {
+  background: #fff2e6;
+}
+.bgfooter {
+  background: #fff2e6;
+  height: 30px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.apply-header {
+	font-size: 36px; /* Adjust the font size as needed */
+	color: #5c374c; /*Set the text color*/
+	text-align: center; /* Center the text */
+	margin-bottom: 8px; /* Add some space at the bottom */
+	font-family: 'Arial';
+  }
+
+.apply-header2 {
+    font-size: 25px; /* Adjust the font size as needed */
+    color: #5c374c; /*Set the text color*/
+    text-align: center; /* Center the text */
+    margin-bottom: 12
+    px; /* Add some space at the bottom */
+    font-family: 'Arial';
+    }
+
+/* ##### */
+
+.inner-contaOne {
+	background: #FFF9F3 none repeat scroll 0 0;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+	margin: 70px auto;
+	max-width: 500px;
+	padding: 50px; 
+	text-align: center;
+	transition: all 300ms linear 0s;
+  }
+
+.inner-container {
+	background: #f8d9d5 none repeat scroll 0 0;
+	border-bottom-left-radius: 40px;
+	border-top-right-radius: 40px;
+	margin: 25px auto;
+	max-width: 500px;
+	padding: 20px 50px;
+	text-align: center;
+	transition: all 300ms linear 0s;
+  }
+  .inner-container:hover {
+	border-bottom-left-radius:0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius:40px;
+	border-top-left-radius: 40px;
+  
+  }
+  .input-containe {
+	margin: 20px 0;
+	position: relative;
+  }
+  .input-containe input[type="text"] {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #FFFFFF;
+	border-color: currentcolor currentcolor #aaaaaa;
+	border-image: none;
+	border-radius: 20px;
+	border-style: none none solid;
+	border-width: medium medium 2px;
+	height: 40px;
+	padding: 0 9px;
+	width: 100%;
+  }
+  .input-containe label {
+	color: #9D141E;
+	margin: 0px 15px;
+	font-size: 16px;
+	left: -1px;
+	position: absolute;
+	top: 8px;
+	transition: all 300ms linear 0s;
+  }
+
+  .input-place:focus {
+	outline: none; /* Remove the default blue outline */
+	border-color: #ffffff; /* Set your desired border color */
+  }
+
+  .input-place:focus ~ label,
+  .input-place:valid ~ label {
+	font-size: 9px;
+	top: 0;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+		color: #9D141E;
+	  font-size: 16px;
+	  font-weight: 600;
+	  opacity: 0.6;
+  }
+  
+  
+  input:focus::-moz-placeholder {
+	  color:transparent;
+  }
+  /* .input-containe::after {
+	background: #9D141E none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	left: 8px;
+	position: absolute;
+	transition: all 300ms ease 0s;
+	width: 0;
+  } */
+  .input-containe.active::after {
+	width: 100%;
+  }
+  .input-containe.active label {
+	font-size: 12px;
+	left: 2px;
+	opacity: 1;
+	top: -1px;
+  }
+  input[type="submit"] {
+	background-color: #ffffff;
+	border: 2px solid #9D141E;
+	border-radius: 5px;
+	color: #cb69ee;
+	margin-top: 20px;
+	padding: 7px;
+	width: 160px;
+  }
+
+  .submit-button {
+	background-color: #ffffff;
+	border: 2px solid #9D141E;
+	border-radius: 20px;
+	color: #9D141E;
+	margin-top: 20px;
+	padding: 7px;
+	width: 160px;
+}
