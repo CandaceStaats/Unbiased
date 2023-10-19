@@ -11,15 +11,22 @@ function Create() {
 	const[isCompanyEmailActive, setIsCompanyEmailActive]=useState(false)
 	const [isSuccess, setIsSuccess] = useState(true)
 
+	const domainAdd = " http://localhost:4000";
+	const pageNameApply = "create";
 
 	function onSubmit(e){
 		e.preventDefault();
+		e.preventDefault();
+		if (jobTitle === "" || companyName === "" || companyEmail === "")
+		{
+			console.log("please fill in all the fields")
+		}
 		let jobPost={
 			companyName: companyName,
 			jobTitle: jobTitle,
 			companyEmail: companyEmail,
 		};
-		axios.post(`https://jsonplaceholder.typicode.com/users`, { jobPost })
+		axios.get(`${domainAdd}/${pageNameApply}`, { params: jobPost })
       		.then(res => {
         		console.log(res)
        			console.log(res.data)
@@ -71,7 +78,7 @@ function Create() {
 			</div>
 	  <button className="submit-button" type="submit">Submit</button>
 	  </form>
-	  {isSuccess ? <h1></h1> : <hi>Something went wrong</hi>}
+	  {isSuccess ? <h1 aria-label="Success message">  </h1> : <h1>Something went wrong</h1>}
     </div>
 	</div>
   );
