@@ -26,6 +26,7 @@ export class ApplyService {
         return found;
     }
 
+
     getApplyWithFilters(filterDto: GetApplyFilterDto): Appl[] {
         const {status, search} = filterDto;
 
@@ -68,11 +69,12 @@ export class ApplyService {
         let pdf:string = "";
     
         try {
+          
             pdf = pdfbuf_normalize(cv.buffer);
 
         } catch (NormalizationError) {
             
-            console.log(NormalizationError + " tokanize error")
+            console.log(NormalizationError + " tokenizer error")
         }
         return pdf;
     }
@@ -81,10 +83,12 @@ export class ApplyService {
         let pdf:string = "";
 
         try {
+          
             pdf = redact(tokenized, name);
+          
         } catch (error) {
             
-            console.log(error + " tokanize error")
+            console.log(error + " tokenizer error")
         }
         return pdf;
     }
@@ -99,8 +103,6 @@ export class ApplyService {
         appl.status = status;
         return appl;
     }
-        
-
 }
 
 
