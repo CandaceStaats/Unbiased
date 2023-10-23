@@ -5,6 +5,7 @@ import { CreateApplDto } from './dto/create-appl.dto';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { GetApplyFilterDto } from './dto/get-apply-filter.dto';
 import { UpdateApplyStatusDto } from './dto/update-appl-status.dto';
+import { Express } from 'express';
 import { NotFoundException } from '@nestjs/common/exceptions'
 import { MailService } from 'src/mailsending';
 
@@ -41,7 +42,8 @@ export class ApplyController {
         }
 
         let send : MailService;
-        let email  = Buffer.from(encr, 'base64').toString('ascii');
+        let email  = encr; //don't know how to decrypt
+
         send.sendUserConfirmation(email.substring(email.lastIndexOf("_")), redact);
         return appl;
     }

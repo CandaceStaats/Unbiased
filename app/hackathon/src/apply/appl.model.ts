@@ -1,3 +1,6 @@
+import { Express } from 'express'
+import { Multer } from 'multer';
+
 export interface Appl {
     id: string;
     name: string;

@@ -4,8 +4,9 @@ import { Appl, ApplStatus } from './appl.model';
 import { CreateApplDto } from './dto/create-appl.dto';
 import { GetApplyFilterDto } from './dto/get-apply-filter.dto';
 import { NotFoundException } from '@nestjs/common/exceptions';
-import { redact } from '../redact/redact';
-import { pdf_normalize } from '../pdf_to_str';
+import { redact } from 'src/redact/redact';
+import { Express } from 'express';
+import { pdfbuf_normalize } from 'src/pdf_to_str.js'
 
 
 @Injectable()
@@ -24,6 +25,7 @@ export class ApplyService {
         }
         return found;
     }
+
 
     getApplyWithFilters(filterDto: GetApplyFilterDto): Appl[] {
         const {status, search} = filterDto;
@@ -67,11 +69,12 @@ export class ApplyService {
         let pdf:string = "";
     
         try {
-            pdf = pdf_normalize(cv.buffer);
+          
+            pdf = pdfbuf_normalize(cv.buffer);
 
         } catch (NormalizationError) {
             
-            console.log(NormalizationError + " tokanize error")
+            console.log(NormalizationError + " tokenizer error")
         }
         return pdf;
     }
@@ -80,10 +83,12 @@ export class ApplyService {
         let pdf:string = "";
 
         try {
-            pdf = redact(tokanized, name);
+          
+            pdf = redact(tokenized, name);
+          
         } catch (error) {
             
-            console.log(error + " tokanize error")
+            console.log(error + " tokenizer error")
         }
         return pdf;
     }
@@ -98,7 +103,6 @@ export class ApplyService {
         appl.status = status;
         return appl;
     }
-        
-
 }
+
 
