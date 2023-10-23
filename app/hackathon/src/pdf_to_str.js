@@ -70,15 +70,15 @@ async function pdfbuf_normalize(buf) {
  * @param	path	Path to the PDF to extract.
  * @return	The raw text, as one string.
  */
-function pdf_normalize(path) {
-	let buf;
-	try {
-		buf = fs.readFileSync(path);
-	} catch (error) {
-		throw new NormalizationError("Normalization couldn't be performed")
-	}
-	return pdfbuf_normalize(buf)
-}
+// function pdf_normalize(path) {
+// 	let buf;
+// 	try {
+// 		buf = fs.readFileSync(path);
+// 	} catch (error) {
+// 		throw new NormalizationError("Normalization couldn't be performed")
+// 	}
+// 	return pdfbuf_normalize(buf)
+// }
 
 // Usage example:
 /*async function test() {

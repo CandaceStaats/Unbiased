@@ -16,6 +16,8 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "resolveJsonModule": true,
+    "noFallthroughCasesInSwitch": false,
+    "typeRoots": ["node_modules/@types"]
   }
 }
