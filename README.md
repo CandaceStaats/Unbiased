@@ -6,13 +6,6 @@ Equality
 - [Tilt](https://tilt.dev/)
 - [minikube](https://minikube.sigs.k8s.io/docs/start/)
 
-
-$oldPath = [Environment]::GetEnvironmentVariable('Path', [EnvironmentVariableTarget]::Machine)
-if ($oldPath.Split(';') -inotcontains 'C:\Users\dmonf\bin\tilt.exe'){
-  [Environment]::SetEnvironmentVariable('Path', $('{0};C:\Users\dmonf\bin\tilt.exe' -f $oldPath), [EnvironmentVariableTarget]::Machine)
-}
- $env:Path = 'C:\Users\dmonf\bin\tilt.exe;' + $env:Path  
-
 # How to run
 ```bash
 minikube start
