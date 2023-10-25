@@ -1,5 +1,6 @@
 {
   "extends": "./tsconfig.json",
   "exclude": ["node_modules", "test", "dist", "**/*spec.ts"],
+  "include": ["pdf_to_string.d.ts"],
   "types": ["node"]
 }

@@ -5,7 +5,6 @@ export class CreateApplDto{
     name: string;
     @IsNotEmpty()
     email: string;
-    @IsNotEmpty()
     encryInfo: string;
     @IsNotEmpty()
     cv: Express.Multer.File;

@@ -6,7 +6,7 @@ import { GetApplyFilterDto } from './dto/get-apply-filter.dto';
 import { NotFoundException } from '@nestjs/common/exceptions';
 import { redact } from 'src/redact/redact';
 import { Express } from 'express';
-import { pdfbuf_normalize } from 'src/pdf_to_str.js'
+import { pdfbuf_normalize } from 'src/pdf_to_str.d'
 
 
 @Injectable()
